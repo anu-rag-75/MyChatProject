@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+</head>
+<body background="resources/images/imgcollaboration.jpg">
+	<div ng-controller="HomeController as ctrl">
+		<div ng-hide="currentUser==''">
+		<br/><br/><br/>
+			<div class="nav navbar-nav navbar-left">Welcome:<b>{{currentUser.name}} </b> 
+				You logged in as:<b>{{currentUser.role}} </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<marquee width="175" behavior="alternate" background="pink"> <a href="#/myprofile">View/Update Profile</a></marquee></div>
+				<div class="nav navbar-nav navbar-right">
+		<li></li> <br>
+		</div>
+		</div>
+		<br>
+		<br>
+		<div class="container">
+		
+			<div class="row">
+			
+				<div class="col-sm-4">
+				<img style="width: 100px;"
+						src="resources/images/job.jpg" alt="Job">
+					<p>You can view and apply for new jobs.</p>
+					<p>You can apply for particular job after login</p>
+				</div>
+				<div class="col-sm-4">
+					<img style="width: 100px; height:100px;"
+						src="resources/images/blog.jpg" alt="Blog">
+					
+					<p>You can view blogs</p>
+				</div>
+				<div class="col-sm-4">
+				<img style="width: 100px;"
+						src="resources/images/alumni.png" alt="Alumni">
+					
+					<p>This site is made for alumni and students</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<img align="center" style="width: 1200px;height:320px;"
+						src="resources/images/imgcollaboration.jpg" alt="Job">
+</body>
+</html>
